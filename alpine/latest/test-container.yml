@@ -2,7 +2,7 @@ schemaVersion: "2.0.0"
 
 metadataTest:
   labels:
-    - key: 'se.haxx.curl'
+    - key: 'Name'
       value: 'curl'
   exposedPorts: []
   entrypoint: ["/entrypoint.sh"]
