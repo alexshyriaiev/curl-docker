@@ -29,4 +29,10 @@ jobs:
       - name: Build Docker image
         run: docker build -t my_curl ./alpine/latest/ -f ./alpine/latest/Dockerfile
       
+      - name: Run structure tests
+        uses: plexsystems/container-structure-test-action@v0.1.0
+        with:
+          image: my_curl:latest
+          config: ./alpine/latest/test-container.yml
+      
 
