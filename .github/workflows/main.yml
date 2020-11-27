@@ -27,6 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build Docker image
-        run: docker build -t my_curl . -f alpine/latest/Dockerfile
+        run: docker build -t my_curl ./alpine/latest/ -f ./alpine/latest/Dockerfile
       
 
